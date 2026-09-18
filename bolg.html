@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2 text-uppercase fw-bold text-white" href="#">Arsha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark" style="color: aliceblue"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-xxl-block d-none">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/Arsha.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                <li><a class="dropdown-item" href="#">Deep Dropdown</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 3</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Arsha.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info py-2 px-2 text-white">Get Started</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="offcanvas-body d-block d-xxl-none">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link-xs active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link-xs dropdown-toggle" href="/Arsha.html    " role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link-xs" href="/Arsha.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info py-2 px-2 text-white rounded-pill"><a
+                                    href="#About">Get Started</a></button>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="article-header-zone">
+        <div class="container">
+            <div>
+                <a href="Arsha.html" class="article-breadcrumb-link">
+                    Home
+                </a>
+                <span class="mx-2 text-secondary">
+                    /
+                </span>
+                <span class="text-secondary">
+                    Blog Details
+                </span>
+            </div>
+            <h1 class="article-heading-main">
+                Blog Details
+            </h1>
+        </div>
+    </section>
+
+    <section class="modern-article-wrap">
+        <div class="container">
+            <div class="row g-5">
+                <!-- BLOG ARTICLE -->
+                <div class="col-lg-8">
+                    <main class="modern-article-main">
+                        <div class="modern-hero-frame rounded-4">
+                            <img src="img/blog/blog-post-3.webp" alt="" class="img-fluid">
+                            <div class="modern-hero-overlay">
+                                <span class="modern-category-pill">
+                                    Web Development
+                                </span>
+                                <span class="modern-meta-dot">
+                                    •
+                                </span>
+                                <span class="modern-read-meta">
+                                    <i class="bi bi-clock"></i>
+                                    6 min read
+                                </span>
+                            </div>
+                        </div>
+                        <h1 class="modern-article-title">
+                            Modern Web Development: Best Practices and Trends for 2025
+                        </h1>
+
+                        <div class="content-story-main py-5">
+                            <div class="content-author-strip">
+                                <div class="content-author-person">
+                                    <img src="img/person/person-f-8.webp" alt="Michael Chen"
+                                        class="content-author-avatar img-fluid">
+                                    <div>
+                                        <h2 class="content-author-name">Michael Chen</h2>
+                                        <p class="content-author-role">Senior Web Developer</p>
+                                    </div>
+                                </div>
+                                <div class="content-author-meta">
+                                    <span><i class="bi bi-calendar3"></i>Mar 15, 2025</span>
+                                    <span class="content-meta-separator">•</span>
+                                    <span><i class="bi bi-chat-text"></i>18 Comments</span>
+                                </div>
+                            </div>
+                            <p class="content-lead-text">
+                                The landscape of web development continues to evolve at an unprecedented pace,
+                                bringing new technologies, frameworks, and methodologies that reshape how we
+                                build modern web applications.
+                            </p>
+                            <p class="content-body-text">
+                                As we delve into 2025, the web development ecosystem has transformed dramatically,
+                                introducing innovative approaches to building faster, more secure, and highly
+                                engaging web experiences. This comprehensive guide explores the latest trends
+                                and best practices that are defining the future of web development.
+                            </p>
+
+                            <div class="row g-4 content-feature-row">
+                                <div class="col-md-5">
+                                    <h2 class="content-feature-heading">The Rise of Web Components</h2>
+                                    <p class="content-feature-copy">
+                                        Web Components have become increasingly crucial in modern web development,
+                                        offering a standardized way to create reusable custom elements. Key advantages
+                                        include:
+                                    </p>
+                                    <ul>
+                                        <li class="mb-2 content-web">Enhanced code reusability across different
+                                            frameworks</li>
+                                        <li class="mb-2 content-web">Better encapsulation of functionality</li>
+                                        <li class="mb-2 content-web">Improved maintenance and scalability</li>
+                                        <li class="mb-2 content-web">Framework-agnostic component development</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-7">
+                                    <div class="shadow-sm rounded-4 text-center">
+                                        <img src="img/blog/blog-hero-2.webp" alt="Web development workspace"
+                                            class="content-feature-image rounded-top-4 img-fluid">
+                                        <p class="content-web align-items-center p-3">Modern development environments
+                                            emphasize collaboration and efficiency</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="shadow"
+                        style="padding: 35px 0; background-color: rgb(244, 249, 248); color: #83aed9; border-radius: 10px;">
+                        <div class=" mx-5 mb-5">
+                            <h3>Key Trends in 2025</h3>
+                        </div>
+                        <div class="d-flex mb-5 mx-5">
+                            <i class="bi bi-lightning-charge-fill fs-5"></i>
+                            <h5 class="mx-3">Edge Computing and Serverless Architecture</h5>
+                        </div>
+                        <div class="d-flex justify-content-conter mx-5  mb-5">
+                            <i class="bi bi-shield-fill-check fs-5"></i>
+                            <h5 class="mx-3">Edge Computing and Serverless Architecture</h5>
+                        </div>
+                        <div class="d-flex justify-content-conter mx-5  mb-5">
+                            <i class="bi bi-phone fs-5"></i>
+                            <h5 class="mx-3">Edge Computing and Serverless Architecture</h5>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-2 py-4" style="color: rgb(100, 100, 168);">
+                            <h2>Performance Optimization</h2>
+                        </div>
+                        <div>
+                            <p style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">
+                                Performance remains a critical factor in web development, with an increasing focus on
+                                Core
+                                Web Vitals and user experience metrics. Modern applications must be optimized for both
+                                speed
+                                and efficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 py-4 shadow dorder"
+                        style="border-radius: 10px; background-color: rgba(235, 235, 235, 0.938);">
+                        <div>
+                            <p class="mx-5" style="font-size: 25px;font-family: italic;padding: 10px 0;">"The future of
+                                web development lies not just in writing code, but in creating seamless,
+                                accessible, and performant experiences that work for everyone, everywhere."
+                            </p>
+                            <p class="mx-5">Emily Thompson, Web Performance Architect</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 mb-4 py-4">
+                        <div class="col-lg-6 team">
+                            <div class="mb-4 shadow" style="padding: 15px 25px;border-radius: 10px;">
+                                <i class="bi bi-speedometer2 fs-2" style="color: rgb(106, 106, 210);"></i>
+                                <h5 class="mb-4" style="color: rgba(80, 80, 182, 0.874);">Performance Metrics</h5>
+                                <p style="font-size: 18px;">Focus on Core Web Vitals and user-centric performance
+                                    metrics for better search
+                                    rankings and user experience.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 team">
+                            <div class="mb-4  shadow" style="padding: 15px 25px;border-radius: 10px;">
+                                <i class="bi bi-universal-access fs-2" style="color: rgb(106, 106, 210);"></i>
+                                <h5 class="mb-4" style="color: rgba(80, 80, 182, 0.874);">Accessibility</h5>
+                                <p style="font-size: 18px;">Implementing WCAG guidelines and ensuring web applications
+                                    are accessible to all users across different devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="py-4 mb-4">
+                        <div class="mb-4"
+                            style="color: rgba(20, 57, 109, 0.776); font-family: Verdana, Geneva, Tahoma, sans-serif; ">
+                            <h3>Looking Forward</h3>
+                        </div>
+                        <p style="font-size: 20px; font-family: initial;">As we continue through 2025, web development
+                            practices will further evolve, embracing new
+                            technologies while maintaining a strong foundation in performance, accessibility, and user
+                            experience. Staying updated with these trends and best practices is crucial for developers
+                            looking to build modern, scalable web applications.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="py-4 mb-4">
+                        <div class="mb-4" style="color: rgba(70, 70, 176, 0.822);">
+                            <h5>Related Topics</h5>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-outline-info"
+                                style="margin: 0 5px; border-radius: 20px;">Web Development</button>
+                            <button type="button" class="btn btn-outline-info"
+                                style="margin: 0 5px; border-radius: 20px;">Performance</button>
+                            <button type="button" class="btn btn-outline-info"
+                                style="margin: 0 5px; border-radius: 20px;">Best Practices</button>
+                            <button type="button" class="btn btn-outline-info"
+                                style="margin: 0 5px; border-radius: 20px;">Trends</button>
+                            <button type="button" class="btn btn-outline-info"
+                                style="margin: 0 5px; border-radius: 20px;">2025</button>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="mb-4" style="color: rgba(70, 70, 176, 0.822);">
+                            <h5>Share Article</h5>
+                        </div>
+                        <div class="footer-social-list">
+
+                            <a href="#" class="footer-social-link">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+
+                            <a href="#" class="footer-social-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+
+                            <a href="#" class="footer-social-link">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+
+                            <a href="#" class="footer-social-link">
+                                <i class="bi bi-link-45deg"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="page-wrap">
+                        <div class="header-row">
+                            <h1 class="page-title">Community Feedback</h1>
+                            <div class="comments-pill"><span>12</span>COMMENTS</div>
+                        </div>
+
+                        <div class="thread">
+                            <div class="comment-row" style="margin-top: 24px;">
+                                <div class="avatar-wrap">
+                                    <img class="avatar" src="img/person/person-f-9.webp" alt="Emily Watson">
+
+                                </div>
+                                <div class="comment-card">
+                                    <div class="comment-top">
+                                        <div>
+                                            <p class="author-name">Emily Watson</p>
+                                            <div class="timestamp"><i class="fa-regular fa-clock"></i>3 hours ago</div>
+                                        </div>
+                                        <div class="like-badge"><i class="fa-regular fa-heart"></i>15</div>
+                                    </div>
+                                    <p class="comment-body">
+                                        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                                        amet adipiscing sem neque sed
+                                        ipsum.
+                                    </p>
+                                    <div class="comment-actions">
+                                        <button><i class="fa-regular fa-heart"></i>Like</button>
+                                        <button><i class="fa-regular fa-comment"></i>Reply</button>
+                                        <button><i class="fa-solid fa-share-nodes"></i>Share</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top level comment with nested replies -->
+                            <div class="reply-group">
+                                <div class="comment-row">
+                                    <div class="avatar-wrap">
+                                        <img class="avatar" src="img/person/person-m-9.webp" alt="Maria Rodriguez">
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <div class="comment-card">
+                                        <div class="comment-top">
+                                            <div>
+                                                <p class="author-name">Maria Rodriguez</p>
+                                                <div class="timestamp"><i class="fa-regular fa-clock"></i>1 hour ago
+                                                </div>
+                                            </div>
+                                            <div class="like-badge"><i class="fa-regular fa-heart"></i>8</div>
+                                        </div>
+                                        <p class="comment-body">
+                                            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+                                            ligula, porttitor eu,
+                                            consequat vitae.
+                                        </p>
+                                        <div class="comment-actions">
+                                            <button><i class="fa-regular fa-heart"></i>Like</button>
+                                            <button><i class="fa-regular fa-comment"></i>Reply</button>
+                                            <button><i class="fa-solid fa-share-nodes"></i>Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment-row" style="margin-bottom: 0;">
+                                    <div class="avatar-wrap">
+                                        <img class="avatar" src="img/person/person-f-9.webp" alt="Alex Chen">
+                                        <div class="status-dot"></div>
+                                    </div>
+                                    <div class="comment-card">
+                                        <div class="comment-top">
+                                            <div>
+                                                <p class="author-name">Alex Chen</p>
+                                                <div class="timestamp"><i class="fa-regular fa-clock"></i>30 minutes ago
+                                                </div>
+                                            </div>
+                                            <div class="like-badge"><i class="fa-regular fa-heart"></i>5</div>
+                                        </div>
+                                        <p class="comment-body">
+                                            Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                                            tellus.
+                                        </p>
+                                        <div class="comment-actions">
+                                            <button><i class="fa-regular fa-heart"></i>Like</button>
+                                            <button><i class="fa-regular fa-comment"></i>Reply</button>
+                                            <button><i class="fa-solid fa-share-nodes"></i>Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Separate top-level comment, no thread line -->
+                            <div class="comment-row" style="margin-top: 24px;">
+                                <div class="avatar-wrap">
+                                    <img class="avatar" src="img/person/person-f-7.webp" alt="Emily Watson">
+                                    <div class="status-dot"></div>
+                                </div>
+                                <div class="comment-card">
+                                    <div class="comment-top">
+                                        <div>
+                                            <p class="author-name">Emily Watson</p>
+                                            <div class="timestamp"><i class="fa-regular fa-clock"></i>3 hours ago</div>
+                                        </div>
+                                        <div class="like-badge"><i class="fa-regular fa-heart"></i>15</div>
+                                    </div>
+                                    <p class="comment-body">
+                                        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                                        amet adipiscing sem neque sed
+                                        ipsum.
+                                    </p>
+                                    <div class="comment-actions">
+                                        <button><i class="fa-regular fa-heart"></i>Like</button>
+                                        <button><i class="fa-regular fa-comment"></i>Reply</button>
+                                        <button><i class="fa-solid fa-share-nodes"></i>Share</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-comment-form py-3 shadow">
+                        <div class="row">
+                            <div class="col-12 row">
+                                <div class="text-center">
+                                    <div class="mb-3" style="color: rgb(51, 82, 183);">
+                                        <h4>Leave a Comment</h4>
+                                    </div>
+                                    <p>Your email address will not be published. Required fields are marked *</p>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Full Name *</label>
+                                    <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Website</label>
+                                <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Your Comment *</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="article-submit-button">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- End BLOG ARTICLE -->
+
+                <!-- RIGHT: SIDEBAR-->
+
+                <div class="col-lg-4">
+
+                    <!-- Search -->
+                    <aside class="modern-side-card">
+                        <h2 class="modern-side-heading">
+                            Search
+                        </h2>
+                        <form class="modern-search-box">
+                            <input type="search" class="modern-search-input" placeholder="">
+                            <button type="submit" class="modern-search-submit" aria-label="Search">
+
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </aside>
+
+                    <!-- Recent Posts -->
+                    <aside class="modern-side-card">
+                        <h2 class="modern-side-heading">
+                            Recent Posts
+                        </h2>
+
+                        <!-- Post 1 -->
+                        <div class="modern-post-entry">
+                            <img src="img/blog/blog-post-square-1.webp" alt="Recent post" class="modern-post-thumb">
+                            <div>
+                                <h3 class="modern-post-name">
+                                    Nihil blanditiis at in nihil autem
+                                </h3>
+                                <span class="modern-post-date">
+                                    Jan 1, 2020
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Post 2 -->
+                        <div class="modern-post-entry">
+                            <img src="img/blog/blog-post-square-2.webp" alt="Recent post" class="modern-post-thumb">
+                            <div>
+                                <h3 class="modern-post-name">
+                                    Quidem autem et impedit
+                                </h3>
+                                <span class="modern-post-date">
+                                    Jan 1, 2020
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Post 3 -->
+                        <div class="modern-post-entry">
+                            <img src="img/blog/blog-post-square-3.webp" alt="Recent post" class="modern-post-thumb">
+                            <div>
+                                <h3 class="modern-post-name">
+                                    Id quia et et ut maxime similique
+                                    occaecati ut
+                                </h3>
+                                <span class="modern-post-date">
+                                    Jan 1, 2020
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Post 4 -->
+                        <div class="modern-post-entry">
+                            <img src="img/blog/blog-post-square-4.webp" alt="Recent post" class="modern-post-thumb">
+                            <div>
+                                <h3 class="modern-post-name">
+                                    Laborum corporis quo dara net para
+                                </h3>
+                                <span class="modern-post-date">
+                                    Jan 1, 2020
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Post 5 -->
+                        <div class="modern-post-entry">
+                            <img src="img/blog/blog-post-square-5.webp" alt="Recent post" class="modern-post-thumb">
+                            <div>
+                                <h3 class="modern-post-name">
+                                    Laborum corporis quo dara net para
+                                </h3>
+                                <span class="modern-post-date">
+                                    Jan 1, 2020
+                                </span>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="content-sidebar-panel">
+                        <h2 class="content-sidebar-heading">Categories</h2>
+                        <ul class="content-category-list">
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">General</a>
+                                <spanclass="content-category-count">(25)</span>
+                            </li>
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">Lifestyle</a>
+                                <span class="content-category-count">(12)</span>
+                            </li>
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">Travel</a>
+                                <span class="content-category-count">(5)</span>
+                            </li>
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">Design</a>
+                                <span class="content-category-count">(22)</span>
+                            </li>
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">Creative</a>
+                                <span class="content-category-count">(8)</span>
+                            </li>
+                            <li class="content-category-item">
+                                <a href="#" class="content-category-link">Education</a>
+                                <span class="content-category-count">(14)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-sidebar-panel">
+                        <h2 class="content-sidebar-heading">Tags</h2>
+                        <div class="content-tag-cloud">
+                            <a href="#" class="content-tag-pill">App</a>
+                            <a href="#" class="content-tag-pill">IT</a>
+                            <a href="#" class="content-tag-pill">Business</a>
+                            <a href="#" class="content-tag-pill">Mac</a>
+                            <a href="#" class="content-tag-pill">Design</a>
+                            <a href="#" class="content-tag-pill">Office</a>
+                            <a href="#" class="content-tag-pill">Creative</a>
+                            <a href="#" class="content-tag-pill">Studio</a>
+                            <a href="#" class="content-tag-pill">Smart</a>
+                            <a href="#" class="content-tag-pill">Tips</a>
+                            <a href="#" class="content-tag-pill">Marketing</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="newsletter-area">
+        <div class="newsletter-title">
+            <h2>Join Our Newsletter</h2>
+        </div>
+        <p class="newsletter-description">
+            Subscribe to our newsletter and receive the latest news about our products and services!
+        </p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" aria-label="Email address">
+            <button type="submit" class="newsletter-button">
+                Subscribe
+            </button>
+        </form>
+    </section>
+
+    <section class="footer-main-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-column">
+                    <h3 class="footer-brand-name">
+                        ARSHA
+                    </h3>
+                    <div class="footer-address-text">
+                        A108 Adam Street<br>
+                        New York, NY 535022
+                    </div>
+
+                    <div class="footer-contact-text">
+                        <strong>Phone:</strong>
+                        +1 5589 55488 55
+                    </div>
+
+                    <div class="footer-contact-text">
+                        <strong>Email:</strong>
+                        info@example.com
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-column">
+                    <h4 class="footer-links-title"> Useful Links </h4>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                About us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Terms of service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-services-title">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Web Design
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Web Development
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Product Management
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Marketing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-social-title">
+                        Follow Us
+                    </h4>
+                    <p class="footer-social-description">
+                        Cras fermentum odio eu feugiat lide par naso tierra videa
+                        magna derita valies
+                    </p>
+
+                    <div class="footer-social-list">
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-area">
+
+                <div class="footer-copyright-text">
+                    © Copyright
+                    <strong>Arsha</strong>
+                    All Rights Reserved
+                </div>
+
+                <div class="footer-design-text">
+                    Designed by
+                    <a href="#">BootstrapMade</a>
+                    |
+                    <a href="#">DevTools</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

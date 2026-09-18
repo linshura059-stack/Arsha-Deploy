@@ -1,0 +1,2289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fs-2 text-uppercase fw-bold text-white" href="#">Arsha</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon navbar-dark" style="color: aliceblue"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-xxl-block d-none">
+                    <!-- <ul class="navbar-nav nav-tabs justify-content-end flex-grow-1 pe-3" ></ul> -->
+
+                    <ul class="nav nav-tabs top-header justify-content-end flex-grow-1" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a aria-current="page" href="#">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Home</button>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#About">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">About</button>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#Services">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Services</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Portfolio">
+                                <button class="nav-link" data-bs-toggle="tab" type="button"
+                                    role="tab">Portfolio</button>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#Team">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Team</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Pricing">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Pricing</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/bolg.html">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Blog</button>
+                            </a>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown custom-hover">
+                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu p-2 rounded-2 border-0">
+                                <li><a class="dropdown-item py-2" href="#">Dropdown 1</a></li>
+
+                                <li class="nav-item dropdown dropstart custom-hover">
+                                    <a class="dropdown-item py-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu p-2 rounded-2 border-0">
+                                        <li><a class="dropdown-item py-2" href="#">Dropdown 1</a></li>
+                                    
+                                        <li>
+                                            <a class="dropdown-item py-2" href="#">Dropdown 2</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item py-2" href="#">Dropdown 3</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item py-2" href="#">Dropdown 4</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                             
+                                <li>
+                                    <a class="dropdown-item py-2" href="#">Dropdown 2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item py-2" href="#">Dropdown 3</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item py-2" href="#">Dropdown 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contact">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Contact</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info py-2 px-4 text-white rounded-pill"><a
+                                    href="#About">Get Started</a></button>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="offcanvas-body d-block d-xxl-none">
+                    <ul class="nav nav-tabs top-header" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a aria-current="page" href="#">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Home</button>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#About">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">About</button>
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#Services">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Services</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Portfolio">
+                                <button class="nav-link" data-bs-toggle="tab" type="button"
+                                    role="tab">Portfolio</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Team">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Team</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Pricing">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Pricing</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/bolg.html">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Blog</button>
+                            </a>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 1</a>
+                                </li>
+
+                                <li class="deep-dropdown">
+                                    <a href="#">
+                                        <span>Deep Dropdown</span>
+                                        <i class="bi bi-chevron-left"></i>
+                                    </a>
+
+                                    <ul class="deep-dropdown-menu">
+                                        <li><a href="#">Deep Dropdown 1</a></li>
+                                        <li><a href="#">Deep Dropdown 2</a></li>
+                                        <li><a href="#">Deep Dropdown 3</a></li>
+                                        <li><a href="#">Deep Dropdown 4</a></li>
+                                        <li><a href="#">Deep Dropdown 5</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 2</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 3</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Dropdown 4</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Contact">
+                                <button class="nav-link" data-bs-toggle="tab" type="button" role="tab">Contact</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-info py-2 px-2 text-white rounded-pill"><a
+                                    href="#About">Get Started</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="bg-primary">
+            <div class="container" data-aos="zoom-in-right">
+                <div class="row align-items-center">
+                    <div class="col-12 col-xxl d-xxl-block d-none">
+                        <h1 class="text-white fw-semibold">Better Solutions For Your Business</h1>
+                        <p class="text-white fs-4">
+                            We are team of talented designers making websites with Bootstrap
+                        </p>
+                        <button type="button" class="btn btn-outline-info px-5 py-3 rounded-pill">
+                            Get Started
+                        </button>
+                        <i class="bi bi-play-circle fs-3 ps-3 align-middle" style="color: aliceblue"></i>
+                        <button type="button" class="btn fs-6 fw-bold text-white">Wacth DEMO</button>
+                    </div>
+                    <div class="col-12 col-xxl">
+                        <img src="img/hero-img.png" alt="" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-xxl d-block d-xxl-none row-gap-5">
+                        <h1 class="text-white fw-semibold">Better Solutions For Your Business</h1>
+                        <p class="text-white fs-5">
+                            We are team of talented designers making websites with Bootstrap
+                        </p>
+                        <button type="button" class="btn btn-info py-3 px-4 text-white">Get Started</button>
+                        <i class="bi bi-play-circle fs-3 ps-3 align-middle" style="color: aliceblue"></i>
+                        <button type="button" class="btn fs-6 fw-bold text-white">Wacth DEMO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="better">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="scroll-container" id="scrollContainer">
+                        <div class="scroll-content" id="scrollContent">
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-1.webp" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-2.webp" class="img-fluid">
+
+                            </div>
+
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-3.webp" class="img-fluid">
+
+                            </div>
+
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-4.webp" class="img-fluid">
+
+                            </div>
+
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-5.webp" class="img-fluid">
+
+                            </div>
+
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-6.webp" class="img-fluid">
+
+                            </div>
+
+                            <div class=" col-lg-2 item">
+                                <img src="img/clients/clients-7.webp" class="img-fluid">
+
+                            </div>
+                            <div class="col-lg-2 item">
+                                <img src="img/clients/clients-8.webp" class="img-fluid">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <!--About-->
+        <div class="container py-4" data-aos="zoom-in-left">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(14, 17, 179, 0.605)">About Us</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="fw-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <ul class="list-unstyled mt-4">
+                        <li>
+                            <i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                        </li>
+                        <li>
+                            <i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
+                            velit.
+                        </li>
+                        <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="fw-light">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                    </p>
+                    <button type="button" class="btn btn-outline-info">
+                        Read More
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-4" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                    </p>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <i class="bi bi-1-circle me-2 fs-4"></i>
+                                    Non consectetur a erat nam at lectus urna duis?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h6>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet non curabitur gravida.
+                                        Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    <i class="bi bi-2-circle me-2 fs-4"></i>
+                                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h6>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum velit laoreet id donec ultrices.
+                                        Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                                        Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                        turpis massa tincidunt dui.</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    <i class="bi bi-3-circle me-2 fs-4"></i>
+                                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <h6>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
+                                        suscipit.
+                                        Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                        tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <img src="img/why-us.png" alt="" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <img src="img/illustration/illustration-10.webp" alt="" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptas</h2>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+
+                    <div class="skills-section">
+
+                        <div class="skills-wrap">
+                            <!-- HTML -->
+                            <div class="skill-item">
+                                <div class="d-flex justify-content-between skill-label">
+                                    <span>HTML</span>
+                                    <span class="skill-percent">0%</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100">
+
+                                    <div class="progress-bar bg-primary" data-value="100">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- CSS -->
+                            <div class="skill-item">
+
+                                <div class="d-flex justify-content-between skill-label">
+                                    <span>CSS</span>
+                                    <span class="skill-percent">0%</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100">
+
+                                    <div class="progress-bar bg-primary" data-value="90">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- JAVASCRIPT -->
+                            <div class="skill-item">
+
+                                <div class="d-flex justify-content-between skill-label">
+                                    <span>JAVASCRIPT</span>
+                                    <span class="skill-percent">0%</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100">
+
+                                    <div class="progress-bar bg-primary" data-value="75">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- PHOTOSHOP -->
+                            <div class="skill-item">
+
+                                <div class="d-flex justify-content-between skill-label">
+                                    <span>PHOTOSHOP</span>
+                                    <span class="skill-percent">0%</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                    aria-valuemax="100">
+
+                                    <div class="progress-bar bg-primary" data-value="55">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- Services -->
+    <section id="Services">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(14, 17, 179, 0.605)">Services</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+                <p class="text-secondary text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="service-item border border shadow mb-3">
+                        <div class="icon-icon">
+                            <i class="bi bi-activity"></i>
+                        </div>
+                        <h3>Lorem Ipsum</h3>
+                        <p class="my-4">
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="service-item border border shadow mb-3">
+                        <div class="icon-icon">
+                            <i class="bi bi-bounding-box-circles"></i>
+                        </div>
+                        <h4>Sed ut perspici</h4>
+                        <p class="my-4">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="service-item border border shadow  mb-3">
+                        <div class="icon-icon">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <h4>Magni Dolores</h4>
+                        <p class="my-4">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="service-item border border shadow mb-3">
+                        <div class="icon-icon">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <h4>Nemo Enim</h4>
+                        <p class="my-4">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Services -->
+
+    <!-- Work Process -->
+    <section class="py-4">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">Work Process</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+                <p class="text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative py-5">
+        <div class="container-fluid px-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <img src="img/steps/steps-1.webp" class="img-fluid" alt="" />
+                        <div class="content">
+                            <div class="number-number">01</div>
+                            <h2 class="title">Research & Analysis</h2>
+                            <p class="description">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione.
+                            </p>
+                            <div class="features">
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Market Research
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Data Analysis
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    User Feedback
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <img src="img/steps/steps-2.webp" class="img-fluid" />
+                        <div class="content">
+                            <div class="number-number">02</div>
+                            <h2 class="title">Design & Planning</h2>
+                            <p class="description">
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                                laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                            </p>
+                            <div class="features">
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Wireframing
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    UI/UX Design
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Prototyping
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="process-card">
+                        <img src="img/steps/steps-3.webp" class="img-fluid" />
+                        <div class="content">
+                            <div class="number-number">03</div>
+                            <h2 class="title">Development & Launch</h2>
+                            <p class="description">
+                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                soluta nobis est eligendi optio cumque nihil.
+                            </p>
+                            <div class="features">
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Development
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Testing
+                                </p>
+                                <p>
+                                    <i class="bi bi-check-circle"></i>
+                                    Deployment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="position-relative py-5" style="height: 350px">
+        <img src="img/bg/bg-8.webp" alt="" style="position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: -1"
+            class="img-fluid" />
+        <div class="container">
+            <div class="row cta-row align-items-center my-5">
+                <div class="col-lg-8 col-md-7 col-12">
+                    <div class="text-white cta-content" data-aos="zoom-in">
+                        <h2>Call To Action</h2>
+
+                        <p>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-12 text-center">
+                    <div class="cta-button">
+                        <button type="button" class="btn btn-outline-light py-3 px-5" style="border-radius: 50px;">
+                            Call To Action
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end Work Process -->
+
+    <!--PORTFOLIO -->
+
+    <section class="py-4" id="Portfolio">
+        <div class="row py-4" data-aos="fade-up">
+            <div class="col">
+                <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-4 col-xxl-2">
+                <div class="row align-items-center justify-content-center pt-3 pb-5">
+                    <div class="col-3 border-bottom"></div>
+                    <div class="col-4 border-bottom border-primary border-3"></div>
+                    <div class="col-3 border-bottom"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+        </div>
+
+        <div class="container" data-aos="zoom-in-up">
+            <!-- Filter -->
+            <div class="portfolio-filters text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+
+                <button class="filter-btn" data-filter="app">App</button>
+
+                <button class="filter-btn" data-filter="card">Card</button>
+
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="row g-4" id="portfolio">
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 portfolio-item app">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-portrait-1.webp" alt="Product 1" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 1</h5>
+                            <p>App</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/app-1.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 portfolio-item card">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-1.webp" alt="Product 2" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 2</h5>
+
+                            <p>Card</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/card-1.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 portfolio-item web">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-3.webp" alt="Product 3" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 3</h5>
+
+                            <p>Web</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/web-1.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-4 col-md-6 portfolio-item card">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-portrait-3.webp" alt="Product 4" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 4</h5>
+
+                            <p>App</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/app-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-lg-4 col-md-6 portfolio-item app">
+                    <div class="portfolio-card" data-aos="fade-up">
+                        <img src="img/portfolio/portfolio-4.webp" alt="Product 5" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 5</h5>
+
+                            <p>Card</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/card-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-lg-4 col-md-6 portfolio-item web">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-portrait-2.webp" alt="Product 6" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 6</h5>
+
+                            <p>Web</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/web-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="fade-up-right">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-7.webp" alt="Product 7" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 6</h5>
+
+                            <p>Web</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/web-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 -->
+                <div class="col-lg-4 col-md-6 portfolio-item card">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-9.webp" alt="Product 8" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 6</h5>
+
+                            <p>Web</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/web-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 -->
+                <div class="col-lg-4 col-md-6 portfolio-item web">
+                    <div class="portfolio-card">
+                        <img src="img/portfolio/portfolio-8.webp" alt="Product 9" class="img-fluid" />
+
+                        <div class="portfolio-overlay">
+                            <h5>Product 6</h5>
+
+                            <p>Web</p>
+
+                            <div class="portfolio-icons">
+                                <a href="img/portfolio/web-2.jpg" target="_blank">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-link-45deg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--PORTFOLIO -->
+
+    <!-- Team -->
+    <section class="team py-4" id="Team">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">TEAM</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+                <p class="text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+        </div>
+
+        <div class="container py-4" data-aos="fade-up-right">
+            <div class="row gy-4 d-flex">
+                <!-- Member 1 -->
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img src="img/person/person-m-7.webp" alt="Walter White" class="img-fluid" />
+
+                        <div class="member-info">
+                            <h4>Walter White</h4>
+
+                            <span>Chief Executive Officer</span>
+
+                            <p>Explicabo voluptatem mollitia et repellat qui doloremque velit.</p>
+
+                            <div class="social-links">
+                                <a href="#">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Member 2 -->
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img src="img/person/person-f-8.webp" alt="Sarah Jhonson" class="img-fluid" />
+
+                        <div class="member-info">
+                            <h4>Sarah Jhonson</h4>
+
+                            <span>Product Manager</span>
+
+                            <p>Aut maiores voluptates amet et quis praesentium qui quis.</p>
+
+                            <div class="social-links">
+                                <a href="#">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img src="img/person/person-m-6.webp" alt="William Anderson" class="img-fluid" />
+
+                        <div class="member-info">
+                            <h4>William Anderson</h4>
+
+                            <span>CTO</span>
+
+                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia.</p>
+
+                            <div class="social-links">
+                                <a href="#">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img src="img/person/person-f-4.webp" alt="Amanda Jepson " class="img-fluid" />
+
+                        <div class="member-info">
+                            <h4>Amanda Jepson</h4>
+
+                            <span>Accountant</span>
+
+                            <p>Dolorum tempora officiis odit laborum officiis et accusamus.</p>
+
+                            <div class="social-links">
+                                <a href="#">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end Team -->
+
+    <section class="Pricing py-4" id="Pricing">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">PRICING</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+                <p class="text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4" data-aos="zoom-in">
+                <div class="col-lg-4">
+                    <div class="card border-0 h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="fw-bold">Free Plan</h4>
+                            <h1 class="fw-bold text-danger">
+                                $0
+                                <small class="fs-5 text-muted">/ month</small>
+                            </h1>
+                            <p class="text-center text-muted">No credit card required</p>
+                            <ul class="list-unstyled mt-4">
+                                <li><i class="bi bi-check-lg text-success"></i> Quam adipisicing vitae proin</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nec feugiat nisl pretium</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nulla at volutpat diam</li>
+                                <li class="text-muted"><i class="bi bi-x"></i> Pharetra massa</li>
+                                <li class="text-muted"><i class="bi bi-x"></i> Massa ultricies</li>
+                                <li class="text-muted"><i class="bi bi-x"></i> Voluptate id</li>
+                                <li class="text-muted"><i class="bi bi-x"></i> Iure nihil</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-info px-5 py-3 rounded-pill">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-danger h-100 shadow">
+                        <div class="card-body">
+                            <span class="badge bg-danger float-end"> Popular </span>
+                            <h4 class="fw-bold">Business Plan</h4>
+                            <h1 class="fw-bold text-danger">
+                                $29
+                                <small class="fs-5 text-muted">/ month</small>
+                            </h1>
+                            <p class="text-center text-muted">No credit card required</p>
+                            <ul class="list-unstyled mt-4">
+                                <li><i class="bi bi-check-lg text-success"></i> Quam adipisicing</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nec feugiat</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nulla at volutpat</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Pharetra massa</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Massa ultricies</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Voluptate id</li>
+                                <li class="text-muted"><i class="bi bi-x"></i> Iure nihil</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-info px-5 py-3 rounded-pill"
+                                style="background-color: rgb(75, 126, 168)">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 h-100 shadow-sm">
+                        <div class="card-body">
+                            <h4 class="fw-bold">Developer Plan</h4>
+                            <h1 class="fw-bold text-danger">
+                                $49
+                                <small class="fs-5 text-muted">/ month</small>
+                            </h1>
+                            <p class="text-center text-muted">No credit card required</p>
+                            <ul class="list-unstyled mt-4">
+                                <li><i class="bi bi-check-lg text-success"></i> Quam adipisicing</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nec feugiat</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Nulla at volutpat</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Pharetra massa</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Massa ultricies</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Voluptate id</li>
+                                <li><i class="bi bi-check-lg text-success"></i> Iure nihil</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-info px-5 py-3 rounded-pill">
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="row" data-aos="fade-up">
+            <div class="col">
+                <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">TESTIMONIALS</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4 col-xxl-2">
+                <div class="row align-items-center justify-content-center pt-3 pb-5">
+                    <div class="col-3 border-bottom"></div>
+                    <div class="col-4 border-bottom border-primary border-3"></div>
+                    <div class="col-3 border-bottom"></div>
+                </div>
+            </div>
+            <p class="text-center">
+                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+            </p>
+
+            <div id="reviewSlide" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <img src="img/person/person-m-9.webp" class="profilePhoto" alt="" class="img-fluid" />
+                            <h4 class="mt-3 mb-0">Saul Goodman</h4>
+                            <div class="jobTitle mb-2">CEO & Founder</div>
+
+                            <div class="starColor mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <p class="quoteText">
+                                <i class="bi bi-quote"></i>
+                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
+                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                risus at semper..
+                                <i class="bi bi-quote"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="img/person/person-f-5.webp" class="profilePhoto" alt="" class="img-fluid" />
+                            <h4 class="mt-3 mb-0">Sara Wilsson</h4>
+                            <div class="jobTitle mb-2">Designer</div>
+
+                            <div class="starColor mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <p class="quoteText">
+                                <i class="bi bi-quote"></i>
+                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
+                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                legam anim culpa.
+                                <i class="bi bi-quote"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="img/person/person-f-12.webp" class="profilePhoto" alt="" class="img-fluid" />
+                            <h4 class="mt-3 mb-0">Jena Karlis</h4>
+                            <div class="jobTitle mb-2">Store Owner</div>
+
+                            <div class="starColor mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <p class="quoteText">
+                                <i class="bi bi-quote"></i>
+                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                minim.
+                                <i class="bi bi-quote"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="img/person/person-m-12.webp" class="profilePhoto" alt="" class="img-fluid" />
+                            <h4 class="mt-3 mb-0">Matt Brandon</h4>
+                            <div class="jobTitle mb-2">Freelancer</div>
+
+                            <div class="starColor mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+
+                            <p class="quoteText">
+                                <i class="bi bi-quote"></i>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                dolore labore illum veniam.
+                                <i class="bi bi-quote"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="img/person/person-m-13.webp" class="profilePhoto" alt="" class="img-fluid" />
+                            <h4 class="mt-3 mb-0">John Larson</h4>
+                            <div class="jobTitle mb-2">Entrepreneur</div>
+
+                            <div class="starColor mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="quoteText">
+                                <i class="bi bi-quote"></i>
+                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
+                                veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                culpa fore nisi cillum quid.
+                                <i class="bi bi-quote"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Indicators -->
+                <div class="carousel-indicators position-static mt-4">
+                    <button type="button" data-bs-target="#reviewSlide" data-bs-slide-to="0"
+                        class="active bg-info"></button>
+                    <button type="button" data-bs-target="#reviewSlide" data-bs-slide-to="1" class="bg-info"></button>
+                    <button type="button" data-bs-target="#reviewSlide" data-bs-slide-to="2" class="bg-info"></button>
+                    <button type="button" data-bs-target="#reviewSlide" data-bs-slide-to="3" class="bg-info"></button>
+                    <button type="button" data-bs-target="#reviewSlide" data-bs-slide-to="4" class="bg-info"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Pricing py-4">
+        <div class="container">
+            <div class="row" data-aos="zoom-in-up">
+                <div class="col">
+                    <h1 class="text-center text-uppercase" style="color: rgba(9, 11, 113, 0.605)">FREQUENTLY
+                        ASKEDQUESTIONS</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 col-xxl-2" data-aos="fade-up">
+                    <div class="row align-items-center justify-content-center pt-3 pb-5">
+                        <div class="col-3 border-bottom"></div>
+                        <div class="col-4 border-bottom border-primary border-3"></div>
+                        <div class="col-3 border-bottom"></div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <p class="text-center">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                        alias
+                        ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item mb-3" data-aos="zoom-in-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <i class="bi bi-question-circle-fill me-2 fs-4"></i>
+                                Non consectetur a erat nam at lectus urna duis?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida.
+                                    Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <i class="bi bi-question-circle-fill me-2 fs-4"></i>
+                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id donec ultrices.
+                                    Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                                    Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis
+                                    massa tincidunt dui.</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <i class="bi bi-question-circle-fill me-2 fs-4"></i>
+                                Dolor sit amet consectetur adipiscing elit pellentesque?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item mb-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <i class="bi bi-question-circle-fill me-2 fs-4"></i>
+                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id donec ultrices.
+                                    phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit
+                                    ullamcorper dignissim.
+                                    Mauris ultrices eros in cursus turpis massa tincidunt dui.</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="accordion-item mb-3" data-aos="fade-up">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <i class="bi bi-question-circle-fill me-2 fs-4"></i>
+                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <h6>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
+                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                    Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis
+                                    cursus in</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div class="newsletter-section" data-aos="zoom-in">
+            <div class="container-fluid h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-7 col-sm-6  col-12 newsletter-content">
+                        <h1 class="newsletter-title">
+                            Subscribe to our newsletter
+                        </h1>
+                        <p class="newsletter-text">
+                            Proin eget tortor risus. Mauris blandit aliquet elit,
+                            eget tincidunt nibh pulvinar a. Curabitur aliquet quam
+                            id dui posuere blandit.
+                        </p>
+                        <div data-aos="zoom-in-up">
+                            <form class="newsletter-form">
+                                <input type="email" class="newsletter-input" placeholder="Email address...">
+                                <button type="submit" class="newsletter-button">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5   col-md-6 col-sm-6 col-12 newsletter-image">
+
+                        <img src="img/cta/cta-1.webp" alt="Newsletter" class="img-fluid">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="recent-blog-area">
+        <div class="container">
+            <!-- Heading -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="recent-blog-heading">
+                        RECENT BLOG POSTS
+                    </h2>
+                    <div class="recent-blog-line"></div>
+                    <p class="recent-blog-description">
+                        Necessitatibus eius consequatur ex aliquid fuga eum
+                        quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+
+            <!-- Blog Cards -->
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="recent-blog-card">
+
+                        <!-- Image -->
+
+                        <div class="recent-blog-image">
+
+                            <img src="img/blog/blog-post-1.webp" alt="Business Meeting" class="img-fluid">
+                            <!-- Date -->
+                            <span class="recent-blog-date">
+                                DECEMBER 12
+                            </span>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="recent-blog-content">
+
+                            <h3 class="recent-blog-title">
+                                Eum ad dolor et. Autem aut fugiat
+                                debitis
+                            </h3>
+                            <!-- Information -->
+
+                            <div class="recent-blog-info">
+                                <span>
+                                    <i class="bi bi-person"></i>
+                                    Julia Parker
+                                </span>
+                                <span class="recent-blog-separator">
+                                    /
+                                </span>
+                                <span>
+                                    <i class="bi bi-folder"></i>
+                                    Politics
+                                </span>
+                            </div>
+                            <hr>
+                            <a href="bolg.html">
+                                <button type="button" class="btn btn-outline-info" style="border: 0;">Read More
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-image">
+                            <img src="img/blog/blog-post-2.webp" alt="Office" class="img-fluid">
+
+                            <span class="recent-blog-date">
+                                JULY 17
+                            </span>
+                        </div>
+                        <div class="recent-blog-content">
+                            <h3 class="recent-blog-title">
+                                Et repellendus molestiae qui est
+                                sed omnis
+                            </h3>
+                            <div class="recent-blog-info">
+                                <span>
+                                    <i class="bi bi-person"></i>
+                                    Mario Douglas
+                                </span>
+                                <span class="recent-blog-separator">
+                                    /
+                                </span>
+                                <span>
+                                    <i class="bi bi-folder"></i>
+                                    Sports
+                                </span>
+                            </div>
+                            <hr>
+                            <a href="bolg.html">
+                                <button type="button" class="btn btn-outline-info" style="border: 0;">Read More
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="recent-blog-card">
+                        <div class="recent-blog-image">
+                            <img src="img/blog/blog-post-3.webp" alt="People Reading" class="img-fluid">
+                            <span class="recent-blog-date">
+                                SEPTEMBER 05
+                            </span>
+                        </div>
+                        <div class="recent-blog-content">
+                            <h3 class="recent-blog-title">
+                                Quia assumenda est et veritati
+                                tirana ploder
+                            </h3>
+                            <div class="recent-blog-info">
+                                <span>
+                                    <i class="bi bi-person"></i>
+                                    Lisa Hunter
+                                </span>
+                                <span class="recent-blog-separator">
+                                    /
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-folder"></i>
+                                    Economics
+                                </span>
+                            </div>
+                            <hr>
+                            <a href="bolg.html">
+                                <button type="button" class="btn btn-outline-info" style="border: 0;">Read More
+                                    <i class="bi bi-arrow-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="recent-blog-area" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="recent-blog-heading">
+                        Contact
+                    </h2>
+                    <div class="recent-blog-line"></div>
+                    <p class="recent-blog-description">
+                        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="article-comment-form ">
+                        <div class="mb-3 contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Address</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-3 ">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Call Us</h4>
+                                <p>+1 5589 55488 55</p>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-item mb-3 ">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h4>Email Us</h4>
+                                <p>info@example.com</p>
+                            </div>
+                        </div>
+
+
+                        <!-- map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15635.945956942514!2d104.86059665679932!3d11.552826045555936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951b1db4b170d%3A0x749634ed2a6c4d94!2z4Z6V4Z-S4Z6f4Z624Z6a4Z6R4Z-G4Z6T4Z6-4Z6UIOGemOGeuOGeiuGekOGfhOGekyDhnpjhn4nhnps!5e0!3m2!1skm!2skh!4v1787302052394!5m2!1skm!2skh"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="article-comment-form">
+                        <div class="row">
+                            <div class="col-12 row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                                    <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                <input type="email" class="form-control rounded-0" id="exampleFormControlInput1">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="article-submit-button">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="newsletter-area">
+        <div class="newsletter-title">
+            <h2>Join Our Newsletter</h2>
+        </div>
+        <p class="newsletter-description">
+            Subscribe to our newsletter and receive the latest news about our products and services!
+        </p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" aria-label="Email address">
+            <button type="submit" class="newsletter-button">
+                Subscribe
+            </button>
+        </form>
+    </section>
+
+    <section class="footer-main-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-column">
+                    <h3 class="footer-brand-name">
+                        ARSHA
+                    </h3>
+                    <div class="footer-address-text">
+                        A108 Adam Street<br>
+                        New York, NY 535022
+                    </div>
+
+                    <div class="footer-contact-text">
+                        <strong>Phone:</strong>
+                        +1 5589 55488 55
+                    </div>
+
+                    <div class="footer-contact-text">
+                        <strong>Email:</strong>
+                        info@example.com
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-column">
+                    <h4 class="footer-links-title"> Useful Links </h4>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                About us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Terms of service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-services-title">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Web Design
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Web Development
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Product Management
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-chevron-right"></i>
+                                Marketing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-column">
+                    <h4 class="footer-social-title">
+                        Follow Us
+                    </h4>
+                    <p class="footer-social-description">
+                        Cras fermentum odio eu feugiat lide par naso tierra videa
+                        magna derita valies
+                    </p>
+
+                    <div class="footer-social-list">
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer-social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-area">
+
+                <div class="footer-copyright-text">
+                    © Copyright
+                    <strong>Arsha</strong>
+                    All Rights Reserved
+                </div>
+
+                <div class="footer-design-text">
+                    Designed by
+                    <a href="#">BootstrapMade</a>
+                    |
+                    <a href="#">DevTools</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                // Remove active
+                filterButtons.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+
+                // Add active
+                button.classList.add("active");
+
+                const filter = button.getAttribute("data-filter");
+
+                portfolioItems.forEach((item) => {
+                    if (filter === "all" || item.classList.contains(filter)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+
+        const container =
+            document.getElementById('scrollContainer');
+
+        const content =
+            document.getElementById('scrollContent');
+
+
+        let isPaused = false;
+
+        let index = 0;
+
+        const speed = 1;
+
+        const items = [
+            {
+                image: 'img/clients/clients-1.webp',
+                title: ''
+            },
+            {
+                image: 'img/clients/clients-2.webp',
+                title: ''
+            },
+            {
+                image: 'img/clients/clients-3.webp',
+                title: ''
+            },
+            {
+                image: 'img/clients/clients-4.webp',
+                title: ''
+            },
+            {
+                image: 'img/clients/clients-5.webp',
+                title: ''
+            },
+
+            {
+                image: 'img/clients/clients-6.webp',
+                title: ''
+            },
+
+            {
+                image: 'img/clients/clients-7.webp',
+                title: ''
+            },
+
+            {
+                image: 'img/clients/clients-8.webp',
+                title: ''
+            },
+        ];
+
+
+        function createItem() {
+
+            const data = items[index % items.length];
+
+            const item = document.createElement('div');
+
+            item.className = 'item';
+
+            item.innerHTML = `
+                <img
+                    src="${data.image}"
+                    alt="${data.title}"
+                >
+
+                <div class="item-title">
+                    ${data.title}
+                </div>
+            `;
+
+
+            item.addEventListener(
+                'mouseenter',
+                function () {
+                    isPaused = true;
+                }
+            );
+
+
+            item.addEventListener(
+                'mouseleave',
+                function () {
+                    isPaused = false;
+                }
+            );
+
+
+            content.appendChild(item);
+
+            index++;
+
+        }
+
+
+        // Create enough items to fill screen
+
+        for (let i = 0; i < 10; i++) {
+            createItem();
+        }
+
+
+        function autoScroll() {
+
+            if (!isPaused) {
+
+                container.scrollLeft += speed;
+
+
+                // When the first item has completely
+                // moved out of the screen
+
+                const firstItem =
+                    content.children[0];
+
+
+                if (
+                    firstItem &&
+                    firstItem.getBoundingClientRect().right
+                    < container.getBoundingClientRect().left
+                ) {
+
+                    const width =
+                        firstItem.offsetWidth + 20;
+
+
+                    // Remove old item
+
+                    content.removeChild(firstItem);
+
+
+                    // Add new item at the end
+
+                    createItem();
+
+
+                    // Keep scrolling position smooth
+
+                    container.scrollLeft -= width;
+
+                }
+
+            }
+
+
+            requestAnimationFrame(autoScroll);
+
+        }
+
+
+        autoScroll();
+
+    </script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const skillsWrap = document.querySelector(".skills-wrap");
+
+            /*
+             * IntersectionObserver
+             * Detect when skills section enters viewport
+             */
+            const observer = new IntersectionObserver(
+                function (entries, observer) {
+
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+
+                            const skills =
+                                skillsWrap.querySelectorAll(".skill-item");
+
+
+                            /*
+                             * Start animation for each skill
+                             */
+                            skills.forEach(function (skill) {
+
+                                const progressBar =
+                                    skill.querySelector(".progress-bar");
+
+                                const percentText =
+                                    skill.querySelector(".skill-percent");
+
+                                /*
+                                 * Get target percentage
+                                 */
+                                const target =
+                                    parseInt(
+                                        progressBar.getAttribute("data-value")
+                                    );
+
+
+                                /*
+                                 * Start from 1
+                                 */
+                                let current = 0;
+
+
+                                /*
+                                 * Animation speed
+                                 */
+                                const timer = setInterval(function () {
+
+                                    current++;
+
+                                    /*
+                                     * Update progress bar
+                                     */
+                                    progressBar.style.width =
+                                        current + "%";
+
+
+                                    /*
+                                     * Update percentage text
+                                     */
+                                    percentText.textContent =
+                                        current + "%";
+
+
+                                    /*
+                                     * Stop when reaching target
+                                     */
+                                    if (current >= target) {
+
+                                        clearInterval(timer);
+
+                                        /*
+                                         * Make sure final value
+                                         * is exactly target
+                                         */
+                                        progressBar.style.width =
+                                            target + "%";
+
+                                        percentText.textContent =
+                                            target + "%";
+                                    }
+
+                                }, 20);
+
+                            });
+
+
+                            /*
+                             * Animation runs only once
+                             */
+                            observer.unobserve(skillsWrap);
+
+                        }
+
+                    });
+
+                },
+                {
+                    /*
+                     * 30% of skills-wrap must be visible
+                     */
+                    threshold: 0.3
+                }
+            );
+
+
+            /*
+             * Start observing skills-wrap
+             */
+            observer.observe(skillsWrap);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
